@@ -1,4 +1,5 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react'
+import { Navigate } from 'react-router-dom';
 
 interface Props {
     children: ReactNode;
@@ -23,7 +24,7 @@ class ErrorBoundary extends Component<Props, State> {
     
     render() {
         if (this.state.hasError) {
-            return <h1>Something went wrong.</h1>;
+            return <Navigate to="/" />;
         }
     
         return this.props.children;
