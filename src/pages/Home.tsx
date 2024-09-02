@@ -37,23 +37,23 @@ return <div>Error: {error}</div>;
 
 return (
 <div className={styles.main}>
-<Header />
-<div className={styles.containerUsers}>
-{currentItems.map((post: Post) => (
-<div className={styles.infoUser} key={post.id}>
-<p className={styles.pUser}>{post.body}</p>
-<h2 className={styles.heading2}>{post.title}</h2>
-</div>
-))}
-</div>
-<div className={styles.pagination}>
-<button className={styles.btn} onClick={() => setCurrentPageWithNavigation(currentPage - 1)} disabled={currentPage === 1}>
-Previous
-</button>
-<button className={styles.btn} onClick={() => setCurrentPageWithNavigation(currentPage + 1)} disabled={currentItems.length < 8}>
-Next
-</button>
-</div>
+    <Header />
+    <div className={styles.containerUsers}>
+        {currentItems.map((post: Post) => (
+        <div className={styles.infoUser} key={post.id}>
+            <p className={styles.pUser}>{post.body}</p>
+            <h2 className={styles.heading2}>{post.title}</h2>
+        </div>
+        ))}
+    </div>
+    <div className={styles.pagination}>
+        <button className={styles.btn} onClick={() => setCurrentPageWithNavigation(currentPage - 1)} disabled={currentPage === 1}>
+            Previous
+        </button>
+        <button className={styles.btn} onClick={() => setCurrentPageWithNavigation(currentPage + 1)} disabled={currentItems.length < 8}>
+            Next
+        </button>
+    </div>
 </div>
 );
 }
