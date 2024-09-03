@@ -230,6 +230,11 @@
         font-size: 1.5em;
     }
     }
+@media (max-width: 509px) {
+    .btnForm{
+        line-height: 15px;
+    }
+}
     
 @media (max-width: 480px) {
     .heading1 {
@@ -240,8 +245,5 @@
         font-size: 12px;
         height: 40px;
         line-height: 40px;
-    }
-    .btnForm{
-        line-height: 15px;
     }
 }
