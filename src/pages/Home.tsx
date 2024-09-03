@@ -38,7 +38,7 @@ return <div>Error: {error}</div>;
 return (
 <div className={styles.main}>
     <Header />
-    <div className={styles.containerUsers}>
+    <div className={styles.conteinerUsers}>
         {currentItems.map((post: Post) => (
         <div className={styles.infoUser} key={post.id}>
             <p className={styles.pUser}>{post.body}</p>
