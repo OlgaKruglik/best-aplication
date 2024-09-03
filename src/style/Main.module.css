@@ -84,7 +84,6 @@
     outline: none;
     border: 1px solid #fff;
     border-radius: 50px;
-    height: 46px;
     line-height: 46px;
     font-size: 14px;
     font-weight: 600;
@@ -151,7 +150,7 @@
 .form {
     display: flex;
     background-color:  #a29d9d;
-    width: 30em;
+    width: 30%;
     flex-direction: column;
     padding: 1.5em;
     gap: 1em;
@@ -218,6 +217,9 @@
         -ms-flex-direction: column;
         flex-direction: column;
     }
+    .form {
+        width: 50%;
+    }
     
     .btn {
         width: 100%;
@@ -238,5 +240,8 @@
         font-size: 12px;
         height: 40px;
         line-height: 40px;
+    }
+    .btnForm{
+        line-height: 15px;
     }
 }
