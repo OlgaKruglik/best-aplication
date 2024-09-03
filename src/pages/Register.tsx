@@ -38,6 +38,7 @@ function Register() {
         }
         } catch (error) {
             console.error('Error fetching user:', error);
+            navigate('/');
         }
     };
     
