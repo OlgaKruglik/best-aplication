@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "private": true,
-  "homepage": "https://OlgaKruglik.github.io/best-aplication",
+  "homepage": "",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "@testing-library/jest-dom": "^5.17.0",
